@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<script src="/CAT/lib/jquery.min.js" type="text/javascript"></script>
+<script src="/CAT/lib/jquery.form.min.js" type="text/javascript"></script>
+<script src="/CAT/src/utils.js" type="text/javascript"></script>
+<script src="/CAT/src/deploy.js" type="text/javascript"></script>
+
+ <head>
+ <meta charset="ISO-8859-1">
+  <title> CAT - Deployment </title>
+ </head>
+ <body>
+	<form id="f_deploy" enctype="multipart/form-data" method="post" action="">
+		Deployment #:
+		<input type="text" class="c_noedit" id="i_dpl">
+		<br>
+		Servers:
+		<select class="c_edit" id="i_srv"></select>
+		<input type="button" class="c_edit" id="i_addsrvbtn" value =" + ">  </input>
+		<br>
+		Download from:
+		<br>
+		<input type="radio" name="get" class="c_radio" id="i_radioL" value="Local">Get from Local</>
+		<input type="radio" name="get" class="c_radio" id="i_radioR" value="Remote">Get from Remote</>
+		<br>
+		<input type="file" name="lcl_upload" class ="c_hidd" id="i_upload"></>
+		</br>
+		<button type="submit" class="c_hidd" id="i_btnsubmit" value="Upload Package">Upload Package</button>
+		
+		<!-- in case of remote file get  -->
+		<div id="i_divremote" class="c_hidd">
+			Repository:
+			<select class="c_edit" id="i_rep"></select>
+			<br>
+			Package url:
+			<label id='i_lblurl' for="i_url"></label>
+			<input type="text" class="c_edit" id="i_url">
+			<br>
+		</div>
+		
+		<!-- after successful unzip, show list of available files  -->
+		<div id="i_divselfile" class="c_hidd">	
+			Select file:	
+			<input type="text" id="i_sel" maxlength="3">
+			<br>
+			<input type="button" id="i_bca" value="Cancel">
+			<input type="button" id="i_bgo" value="Go with Deploy">
+			<br>
+		</div>
+		<br>
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script src="/CAT/lib/jquery.min.js" type="text/javascript"></script>
+<script src="/CAT/src/saveServer.js" type="text/javascript"></script>
+<script src="/CAT/src/serverDetail.js" type="text/javascript"></script>
+<script src="/CAT/src/utils.js" type="text/javascript"></script>
+<head>
+<meta charset="ISO-8859-1">
+</head>
+<body >
+<form id="f_srvdtl">
+		Id:
+		<input type="text" class="c_noedit" id="i_srvid" maxlength="3">
+		<br>
+		Hostname:
+		<input type="text" class="c_edit"  id="i_srvhostname" maxlength="50">
+		<br>
+		Ip Address:
+		 <input type="text" class="c_edit"  id="i_srvipaddress" maxlength="15">
+		 <br>
+		Username:
+		 <input type="text" class="c_edit"  id="i_srvusername">
+		 <br>
+		Password: 
+		 <input type="password" class="c_edit" id="i_srvpassword">
+		 <br>
+		NodePort
+		 <input type="text" class="c_edit"  id="i_srvnodeport" maxlength="5">
+		 <br>
+		Remote Temporary Path: 
+		 <input type="text" class="c_edit" id="i_srvrtp">
+		 <br>
+		 <input id="b_update" type="button" value="Update Server">
+		 <input id="b_edit" type="button" value="Edit \ Lock">
+	</form>
+</body>
+</html>
